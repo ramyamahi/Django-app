@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>App</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Alias</th>
+      </tr>
+      {% for data in customer_list %}
+      <tr>
+        <td>{{data.name}}</td>
+        <td>{{data.alias}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
